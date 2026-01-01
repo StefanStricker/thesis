@@ -1,4 +1,5 @@
 datasets/
 datasets_pre/
+subgroups/
 data_prep.ipynb
 requirements.txt
