@@ -3,3 +3,7 @@ datasets_pre/
 subgroups/
 data_prep.ipynb
 requirements.txt
+baseline_transforms.png
+geometric_transforms.png
+photometric_transforms.png
+mixed_transforms.png
