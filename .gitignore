@@ -1,6 +1,5 @@
-datasets/
 datasets_pre/
-subgroups/
+subgroups
 data_prep.ipynb
 requirements.txt
 baseline_transforms.png
