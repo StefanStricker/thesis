@@ -2,7 +2,7 @@ import shutil
 import random
 from pathlib import Path
 
-SEED = 16
+SEED = 64
 rng = random.Random(SEED)
 
 SPLITS = (0.8, 0.1, 0.1)
