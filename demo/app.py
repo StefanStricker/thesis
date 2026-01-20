@@ -16,24 +16,22 @@ NUM_CLASSES = len(CLASS_NAMES)
 # Path to your photo model
 MODEL_OPTIONS = {
     "ResNet50 – Baseline": {
-        "path": "trained_models/resnet50_baseline.pth",
+        "path": "trained_models/resnet50_baseline_seed64.pth",
         "description": "Trained on source domain without photometric augmentations."
     },
     "ResNet50 – Photo Augmentations": {
-        "path": "trained_models/resnet50_photo.pth",
+        "path": "trained_models/resnet50_photo_seed64.pth",
         "description": "Trained with photometric augmentations to improve robustness under domain shift."
     }
 }
 
 
-# IMPORTANT: Use the same normalize as training.
-# If your "normalize" was ImageNet (very likely), keep this:
+
 NORMALIZE = transforms.Normalize(
     mean=[0.485, 0.456, 0.406],
     std=[0.229, 0.224, 0.225]
 )
 
-# This matches your "val" transform:
 VAL_TRANSFORM = transforms.Compose([
     transforms.Resize((224, 224)),
     transforms.ToTensor(),
