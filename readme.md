@@ -48,8 +48,18 @@ The self-collected target dataset is available on hugging face https://huggingfa
 
 ### 1. Train models (this trains all 12 models tested)
 
-    python model.train.iypnb
+    python notebooks/model.train.iypnb
 
 ### 2. Evaluate models 
 
-    python evaluation.ipynb
+    python notebooks/evaluation.ipynb
+
+## Application demonstration
+
+The web-based demonstration application showcases trained classification models in an interactive setting. The demo allows users to upload images and view the predicted class probabilities for the best performing model Resnet50 with photometric augmentations as well as the baseline model for comparison.
+
+To run the demo on local machine, the model weights for resnet50_baseline_seed64.pth and resnet_photo_seed64.pth need to be saved in the `trained_models` folder.
+
+### Run the demo
+
+    streamlit run demo/app.py
