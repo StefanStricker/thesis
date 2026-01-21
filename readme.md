@@ -11,6 +11,39 @@ Architectures tested:
 
 ---
 
+## Project Folder Structure
+
+```
+├── data/                               # Folder for data storage and preprocessing
+│   ├── datasets/                       # Folder for storing datasets
+│   │    ├── trashnet                   # Preprocessed TrashNet dataset   
+│   │    └── trashvariety               # Preprocessed self-collected dataset
+│   ├── hf_cache/                       # Huggingface cache
+│   ├── subgroups/                      # Subgroups Folder for evaluation  
+│   ├── subgroups.csv                   # Subgroups file for folder creation
+│   ├── TrashNet_pre/                   # TrashNet dataset preprocessed
+│   ├── download_self_collected.py      # Download self-collected dataset
+│   └── trashnet_prep.py                # Preprocess TrashNet dataset
+├── demo/                               # Demo folder
+│    └── app.py                         # Demo application script
+├── images/                             # Images folder
+├── notebooks/                          # Notebooks folder
+│   ├── evaluation.ipynb                # Model Evaluation notebook creates CSV files
+│   ├── exploration.ipynb               # Explores the results of the evaluation notebook
+│   ├── model_train.iypnb               # Trains all models
+│   └── vis.ipynb                       # Creates Visualization of data sugmentations
+├── results/                            # Results folder
+│   ├── class_metrics.csv               # Class metrics for individual random seed runs 
+│   ├── class_metrics_agg.csv           # Aggregated class metrics
+│   ├── model_metrics_agg.csv           # Aggregated model metrics
+│   ├── model_metrics.csv               # Model metrics for individual random seed runs
+│   ├── subgroup_metrics.csv            # Subgroup metrics for individual random seed runs
+│   └── subgroup_metrics_agg.csv        # Aggregated subgroup metrics
+├── trained_models/                     # Folder to store trained models
+├── .gitignore                          # Gitignore file    
+├── requirements.txt                    # Requirements file
+```
+
 ## Installation guide
 
 ### 1. Clone Repository
