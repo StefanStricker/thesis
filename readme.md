@@ -15,15 +15,20 @@ Architectures tested:
 
 ### 1. Clone Repository
 
-
     git clone https://github.com/StefanStricker/thesis.git
     cd thesis
 
-
 ### 2. Create Virtual Environments
 
-    python3 -m venv/venv
+Linux/macOS
+
+    python3 -m venv venv
     source venv/bin/activate
+
+Windows
+
+    python -m venv venv
+    .\venv\Scripts\activate
 
 ### 3. Install dependencies
 
@@ -53,6 +58,8 @@ The self-collected target dataset is available on hugging face https://huggingfa
 ### 2. Evaluate models 
 
     python notebooks/evaluation.ipynb
+
+Results are stored as CSV Files in the `results` folder
 
 ## Application demonstration
 
@@ -92,4 +99,4 @@ The application demonstration can be explored on huggingface: https://huggingfac
 ├── trained_models/                     # Folder to store trained models
 ├── .gitignore                          # Gitignore file    
 ├── requirements.txt                    # Requirements file
-```    
+```
