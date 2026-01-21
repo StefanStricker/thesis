@@ -28,7 +28,7 @@ Linux/macOS
 Windows
 
     python -m venv venv
-    .\venv\Scripts\activate
+    \venv\Scripts\activate
 
 ### 3. Install dependencies
 
@@ -53,13 +53,19 @@ The self-collected target dataset is available on hugging face https://huggingfa
 
 ### 1. Train models (this trains all 12 models tested)
 
-    python notebooks/model.train.iypnb
+    notebooks/model.train.ipynb
 
 ### 2. Evaluate models 
 
-    python notebooks/evaluation.ipynb
+    notebooks/evaluation.ipynb
 
 Results are stored as CSV Files in the `results` folder
+
+### 3. Exploration
+
+    notebooks/exploration.ipynb
+
+Creates additional visualizations in the `images` folder
 
 ## Application demonstration
 
